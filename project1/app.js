@@ -22,7 +22,7 @@ submitHandler.addEventListener('click',function(){
       inputHandler.addEventListener('keyup',()=>{
           if(!inputHandler.value){
          document.getElementById('qr_image_div').classList.remove("mystyle");
-     document.getElementById('qr_image').style.opacity ='0'
+         document.getElementById('qr_image').style.opacity ='0'
 
 
           }
