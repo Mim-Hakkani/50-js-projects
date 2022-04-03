@@ -7,7 +7,7 @@ document.getElementById('checkPalendome').addEventListener('click',()=>{
 
     const storeValue = inputvalue.value.toLowerCase().replace(/[^a-zA-Z0-9]/g,'')
 
-console.log( storeValue);
+
     // if(storeValue)
     const reverseValue =storeValue.split('').reverse().join('')
 
@@ -22,5 +22,12 @@ console.log( storeValue);
              hiddentext.style.color ='green';
         return hiddentext.innerText =`${storeValue} is palandrome number`
     }
+
+
+  
+
+    storeValue.addEventListener('change',()=>{
+        console.log("Store value :: ",storeValue);
+    })
 
 })
