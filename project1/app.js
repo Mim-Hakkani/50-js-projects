@@ -17,8 +17,20 @@ submitHandler.addEventListener('click',function(){
      document.getElementById('qr_image').src =qrcode;
      
 
-    inputHandler.value =" "
+    // inputHandler.value =" "
+
+      inputHandler.addEventListener('keyup',()=>{
+          if(!inputHandler.value){
+         document.getElementById('qr_image_div').classList.remove("mystyle");
+     document.getElementById('qr_image').style.opacity ='0'
+
+
+          }
+        
+        })
 
     }
+
+ 
  
 })
